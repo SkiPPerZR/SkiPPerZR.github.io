@@ -1,0 +1,202 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.top-head-menu ul {
+		margin: 38px 0px 0px 0px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.header-topline h3 {
+		display: block;
+		text-align: center;
+	}
+	.top-head-menu ul {
+		display: none;
+		position: absolute;
+		width: 100%;
+		top: 136px;
+		left: 0px;
+		padding: 0;
+		margin: 0; 
+		z-index: 12;
+	}
+	.top-head-menu ul li:hover {
+		background-color: #26ab5f;
+		z-index: 12;
+	}
+	.top-head-menu ul li:active {
+		background-color: #28ff83;
+		z-index: 12;
+	}
+	.top-head-menu ul li {
+		display: block;
+		margin: 0;
+		padding: 10px 20px 10px 20px;
+		width: 100%;
+		cursor: pointer;
+		z-index: 12;
+	}
+	.header-topline button :last-child {margin-bottom: 5px;}
+	.meal-time p {margin-bottom: 715px;}
+	.time-eat {
+	background: url(../img/apple.png) no-repeat 46.5% 60%,
+				url(../img/sandwich.png) no-repeat 50% 75.5%,
+				url(../img/salad.png) no-repeat 46.5% 90% #ffffff;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.app-opportunities .container {
+		background: url(../img/iPhone5C-down.png) no-repeat 50% 330%;
+	}
+	.meal-time p {margin-bottom: 715px;}
+	.time-eat {
+	background: url(../img/apple.png) no-repeat 46.5% 60%,
+				url(../img/sandwich.png) no-repeat 50% 75.5%,
+				url(../img/salad.png) no-repeat 46.5% 90% #ffffff;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	.app-opportunities .container {
+		background: url(../img/iPhone5C-down.png) no-repeat 50% 240%;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	.app-opportunities .container {
+		background: url(../img/iPhone5C-down.png) no-repeat 50% 226%;
+	}
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.bgc-icon-3{
+		position: absolute;
+		top: 370px;
+		left: 7px;
+	}
+	.app-opportunities .container {
+		background: url(../img/iPhone5C-down.png) no-repeat 50% 330%;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.top-head-menu ul {display: inline-block !important;}
+	.top-head-menu {margin-left: 19%;}
+	.header-topline h3 {
+		position: absolute;
+	}
+	.header-downline .row {background: url(../img/iPhone5C-top.png) no-repeat 61% 90%;}
+	.app-info .col-md-12 {background: url(../img/Elipsa.png) no-repeat -30% 41.4%;}
+	.bgc-icon-1{
+		position: absolute;
+		top: 208px;
+		left: 145px;
+	}
+	.bgc-icon-2{
+		position: absolute;
+		top: 285px;
+		left: 250px;
+	}
+	.bgc-icon-3{
+		position: absolute;
+		top: 400px;
+		left: 277px;
+	}
+	.bgc-icon-4{
+		position: absolute;
+		top: 550px;
+		left: 250px;
+	}
+	.bgc-icon-5{
+		position: absolute;
+		top: 630px;
+		left: 145px;
+	}
+	.app-opportunities .container {
+		background: url(../img/iPhone5C-down.png) no-repeat 50% 330%,
+					url(../img/iPhone5C-down-2.png) no-repeat 17.4% 147%,
+					url(../img/iPhone5C-down-3.png) no-repeat 82% 147%;
+	}
+	.meal-time h2,
+	.meal-time p {width: 45%;}
+	.time-eat {
+	background: url(../img/apple.png) no-repeat 96.5% 20%,
+				url(../img/sandwich.png) no-repeat 100% 50%,
+				url(../img/salad.png) no-repeat 96.5% 80% #ffffff;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.top-head-menu {margin-left: 34%;}
+	.top-head-menu ul {
+		margin: 38px 0px 0px 0px !important;
+	}
+	.header-topline h3 {
+		position: absolute;
+	}
+	.header-downline .row {background: url(../img/iPhone5C-top.png) no-repeat 51% 90%;}
+	.app-info .col-md-12 {background: 	url(../img/iPhone5C-middle.png) no-repeat -7% 44.6%,
+	 									url(../img/Elipsa.png) no-repeat 6.4% 41.4%;}
+	.bgc-icon-1{
+		position: absolute;
+		top: 208px;
+		left: 335px;
+	}
+	.bgc-icon-2{
+		position: absolute;
+		top: 285px;
+		left: 440px;
+	}
+	.bgc-icon-3{
+		position: absolute;
+		top: 400px;
+		left: 467px;
+	}
+	.bgc-icon-4{
+		position: absolute;
+		top: 550px;
+		left: 440px;
+	}
+	.bgc-icon-5{
+		position: absolute;
+		top: 630px;
+		left: 335px;
+	}
+	.app-opportunities .container {
+		background: url(../img/iPhone5C-down.png) no-repeat 50% 330%,
+					url(../img/iPhone5C-down-2.png) no-repeat 17.4% 147%,
+					url(../img/iPhone5C-down-3.png) no-repeat 82% 147%;
+	}
+	.meal-time h2,
+	.meal-time p {width: auto;}
+	.time-eat {
+	background: url(../img/apple.png) no-repeat 86.5% 20%,
+				url(../img/sandwich.png) no-repeat 90% 50%,
+				url(../img/salad.png) no-repeat 86.5% 80% #ffffff;
+	}
+}
