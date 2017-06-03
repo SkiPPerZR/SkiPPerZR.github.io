@@ -1,0 +1,314 @@
+.device
+	&__section
+		margin-top 30px
+		display inline-block
+		padding 0
+		border-right 2px solid $buttonRed
+		h4
+			padding 0 15px
+			a
+				font 1.125rem $semibold
+				color $gray
+				&:hover
+					color $darkGray
+		&:first-child
+			a
+				color $pointGray
+		&:last-child
+			border-right none
+		@media(max-width 992px)
+			display block
+			text-align center
+			border-right none
+	&__breadcrumbs
+		margin 40px 0px 20px 0px
+		p
+			span
+				font 1.125rem $regularMain
+				color $gray
+			a
+				font 1.125rem $regularMain
+				color $gray
+				text-decoration none
+	&__title
+		border-bottom 1px solid $lightGray
+		margin-bottom 50px
+		h3
+			margin 0 auto
+			padding 20px 0
+			width 715px
+			text-align center
+			font 1.375rem $regularMain
+			color $gray
+			border-bottom 2px solid $red
+			@media(max-width 762px)
+				width 405px
+			@media(max-width 480px)
+				width 265px
+	&__content
+		span
+			display inline-block
+			float right
+			font 1.375rem $regularMain
+			color $gray
+			@media(min-width 1200px)
+				max-width 49%
+			@media(max-width 1200px)
+				max-width 40%
+			@media(max-width 992px)
+				display block
+				max-width 100%
+				margin-bottom 45px
+		h4
+			margin-top 70px
+			margin-bottom 25px
+			font 1.5rem $bold
+			color $gray
+			text-align center
+			&:nth-child(3)
+				line-height 34px
+		img
+			display inline-block
+			margin 85px 25%
+			@media(max-width 1200px)
+				margin 85px 18%
+			@media(max-width 992px)
+				margin 85px 11%
+			@media(max-width 762px)
+				width 410px
+				margin-left 4%
+				margin-right 0
+			@media(max-width 480px)
+				width 85%
+				margin-left 7%
+				margin-right 0
+		.img1
+			display inline-block
+			background url("../images/DS-185m2.png") no-repeat 50% 50%
+			height 290px
+			@media(min-width 1200px)
+				width 550px
+			@media(max-width 1200px)
+				width 550px
+			@media(max-width 992px)
+				margin-left 11%
+				margin-bottom 10px
+				margin-right 0
+			@media(max-width 762px)
+				width 87%
+				margin-left 7%
+				margin-right 0
+			@media(max-width 480px)
+				width 85%
+				background url("../images/DS-185m2.png") no-repeat 90% 50%
+				margin-left 7%
+				margin-right 0
+		.line
+			width 100%
+			height 77px
+			border-bottom 2px solid $fontGray
+			h4
+				display inline-block
+				margin 0
+				padding 22px 0 22px 30px
+				float left
+				font 1.5rem $bold
+			.red
+				color $red
+			.green
+				color $green
+			p
+				display inline-block
+				padding 22px 5px 22px 0
+				float right
+				font 1.25rem $semibold
+				color $gray
+				@media(max-width 1200px)
+					font-size 1rem
+					padding 24px 5px 23px 0
+				@media(max-width 992px)
+					width 60%
+					padding 17px 5px 17px 0
+				@media(max-width 762px)
+					width 58%
+					padding 2.1% 5px 2.1% 0
+				@media(max-width 480px)
+					width 55%
+					padding 3% 5px 0 0
+		.description
+			display inline-block
+			margin-top 35px
+			margin-left 30px
+			.green_img
+				background-color #009920
+				display inline-block
+				height 30px
+				width 30px
+				margin-right 10px
+			.red_img
+				background-color #ab2728
+				display inline-block
+				height 30px
+				width 30px
+				margin-right 10px
+			p
+				display inline-block
+				position relative
+				top -9px
+				font 1.123rem $semibold
+				color $fontDirtyGray
+		.table
+			border 3px solid $borderGray
+			-webkit-border-radius 2px
+			   -moz-border-radius 2px
+				-ms-border-radius 2px
+			 	 -o-border-radius 2px
+					border-radius 2px
+			.table-line
+				height 70px
+				border-bottom 3px solid $borderGray
+				@media(max-width 992px)
+					height 90px
+				p
+					display inline-block
+					height auto
+					font 1rem $semibold
+					color $gray
+					padding 25px 0 25px 30px
+					@media(max-width 1200px)
+						padding 25px 0 25px 10px
+					@media(max-width 992px)
+						width 65%
+						padding 3.5% 0 3.5% 10px
+					@media(max-width 762px)
+						width 60%
+					@media(max-width 480px)
+						width 50%
+				span
+					display inline-block
+					float right
+					text-align center
+					width 270px
+					padding 25px 0 23px 0
+					border-left 3px solid $borderGray
+					max-width none
+					font 1.125rem $extrabold
+					color $gray
+					@media(max-width 1200px)
+						width 170px
+						padding 2.5% 0 2.5% 0
+					@media(max-width 992px)
+						padding 4.6% 0 4.6% 0
+						margin-bottom 0
+					@media(max-width 762px)
+						padding 4.7% 0 4.7% 0
+					@media(max-width 480px)
+						width 100px
+						padding 8.2% 0 8% 0
+					@media(max-width 320px)
+						padding 13% 0 13% 0
+				&:nth-child(6)
+					span
+						@media(max-width 1200px)
+							padding 1.3% 0 1.3% 0
+						@media(max-width 762px)
+							padding 3.4% 0 3.4% 0
+						@media(max-width 480px)
+							padding 6.3% 0 6.3% 0
+							line-height 14px
+						@media(max-width 320px)
+							padding 10.5% 0 10.5% 0
+				&:nth-child(8),&:nth-child(9)
+					height 165px
+				&:nth-child(8)
+					p
+						padding 75px 0 75px 30px
+						@media(max-width 1200px)
+							padding 75px 0 75px 10px
+					span
+						line-height 32px
+						padding 35px 0 33px 0
+						font-size 0.875rem
+						@media(max-width 1200px)
+							padding 2.3% 0 2.3% 0
+							line-height 24px
+						@media(max-width 992px)
+							padding 3% 0 3% 0
+						@media(max-width 480px)
+							padding 7.8% 0 7.8% 0
+							line-height 16px
+						@media(max-width 320px)
+							padding 11.7% 0 11.7% 0
+				&:nth-child(9)
+					p
+						line-height 32px
+						padding 30px 0 30px 30px
+						@media(max-width 1200px)
+							padding 30px 0 30px 10px
+						@media(max-width 992px)
+							width 75%
+							padding 20px 0 20px 10px
+						@media(max-width 762px)
+							width 57%
+							line-height 24px
+						@media(max-width 480px)
+							width 50%
+							line-height 12px
+					span
+						line-height 32px
+						padding 55px 0 45px 0
+						@media(max-width 1200px)
+							padding 5.3% 0 5.3% 0
+						@media(max-width 992px)
+							padding 7% 0 7% 0
+						@media(max-width 762px)
+							padding 6.8% 0 6.8% 0
+						@media(max-width 480px)
+							padding 11.1% 0 11.1% 0
+						@media(max-width 320px)
+							padding 17.5% 0 17.5% 0
+				&:nth-child(11)
+					border-bottom none
+					@media(max-width 1200px)
+						span
+							padding 2.55% 0 2.55% 0
+					@media(max-width 992px)
+						span
+							padding 4.73% 0 4.73% 0
+					@media(max-width 762px)
+						span
+							padding 4.9% 0 4.9% 0
+					@media(max-width 480px)
+						span
+							padding 8.4% 0 8.4% 0
+					@media(max-width 320px)
+						span
+							padding 13.5% 0 13.5% 0
+		.list
+			padding 0 8%
+			.list-line
+				padding-top 7px
+				li
+					padding-left 30px
+					font 1.125rem $semibold
+					color $gray
+					line-height 34px
+					list-style-type none
+				.point
+					position relative
+					top 23px
+					background-color $buttonRed
+					height 12px
+					width 12px
+					-webkit-border-radius 50%
+				   	   -moz-border-radius 50%
+						-ms-border-radius 50%
+				 	 	 -o-border-radius 50%
+							border-radius 50%
+		.text
+			margin-top 35px
+			font 1.125rem $semibold
+			color $gray
+			line-height 34px
+		.text-mg
+			margin-top 75px

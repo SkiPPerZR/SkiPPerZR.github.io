@@ -1,0 +1,115 @@
+.news
+	background-color $white
+	&__news-title
+		margin-top 95px
+		margin-bottom 10px
+		border-bottom 1px solid $lightGray
+		h3
+			text-align center
+			width 85px
+			margin 0 auto
+			padding 20px 0
+			font 1.375rem $regularMain
+			color $gray
+			border-bottom 2px solid $red
+	&__column
+		//First big block of news
+		.item
+			margin-top 90px
+			height 320px
+			background-color #ffffff
+			@media(max-width 480px)
+				margin-top 20px
+				height 312px 
+			&:hover
+				box-shadow 3px 7px 20px 5px rgba(0, 0, 0, 0.33)
+				transition 0.3s
+			&__image
+				background url('../images/news.png') no-repeat
+				background-size cover
+				height 148px
+				h4
+					width 75px
+					padding 10px 8px
+					text-align center
+					position relative
+					top 0px
+					left 25px
+					font 1.375rem $semibold
+					color $white
+					background-color $buttonRed
+				span
+					text-align center
+					padding-top 10px
+					font 0.875rem $regularMain
+					color $white
+			h5
+				margin 25px 0px 0px 25px
+				padding-bottom 10px
+				border-bottom 1px solid $lightRed
+				font 1rem $regularMain
+				color $gray
+			p
+				margin 7px 0px 0px 25px
+				font 0.875rem $regularMain
+				color $gray
+			a
+				margin 20px 0px 0px 25px
+				font 0.8125rem $regularMain
+				font-style italic
+				color $gray
+				text-decoration none
+				&:hover
+					text-decoration underline
+			
+		//Second small block of news
+		.column__right
+			height 320px
+			margin-top 90px
+			@media(max-width 480px)
+				margin-top 30px
+				margin-bottom 25px
+				height auto
+			.item-sm
+				height 76px
+				margin-top 15px
+				&:hover
+					box-shadow 4px 4px 20px 2px rgba(0, 0, 0, 0.33)
+					transition 0.3s
+				&__image
+					height 76px
+					width 130px
+					float left
+					margin-right 15px
+					background url('../images/news.png') no-repeat
+					background-size cover
+				h5
+					padding-bottom 5px
+					font 0.875rem $regularMain
+					color $gray
+					border-bottom 1px solid $lightRed
+				a
+					font 0.75rem $regularMain
+					font-style italic
+					color $gray
+					text-decoration none
+					&:hover
+						text-decoration underline
+			.item-sm:first-child
+				margin-top 0px
+			.see-more
+				margin-top 30px
+				@media(max-width 480px)
+					margin-top 0px
+					margin-left 43px
+					a
+						padding 10px 10px
+				a
+					padding 10px 15px
+					font 1rem $regularMain
+					background-color $buttonRed
+					text-transform uppercase
+					color $white
+					&:hover
+						background-color $red
+						transition 0.2s

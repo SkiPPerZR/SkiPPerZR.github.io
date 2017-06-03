@@ -1,0 +1,245 @@
+/*CSS code top-header*/
+
+.header-topline{background-color: #2ecc71;}
+.header-topline h3 {
+	margin: 0;
+	margin-top: 25px;
+	display: inline-block;
+	font: 38px "Segoe-UI-Black-Italic", sans-serif;
+	font-weight: bold;
+	font-style: italic;
+}
+.header-topline h3 a {
+	text-decoration: none;
+	color: #f4f4f4;
+}
+.top-head-menu {display: inline-block;}
+.header-topline button:first-child {margin-top: 33px;}
+.header-topline button:last-child {
+	float: right;
+	margin-top: 28px;
+}
+.top-head-menu ul,
+.top-head-menu ul li
+{display: inline-block;}
+.top-head-menu ul {
+	background-color: #2ecc71;
+}
+.top-head-menu ul li {
+	margin: 0px 25px 0px 25px;
+}
+.top-head-menu ul li a {
+	text-decoration: none;
+	font: 18px "Roboto-Thin", sans-serif;
+	color: #fefefe;
+}
+.btn {
+	padding: 9px 34px;
+	background-color: #fff;
+	font: 18px "Roboto-Bold", sans-serif;
+	font-weight: bold;
+	color: #2ecc71;
+	border: none;
+	outline: none;
+
+	-webkit-border-radius: 30px;
+	   -moz-border-radius: 30px;
+		-ms-border-radius: 30px;
+		 -o-border-radius: 30px;
+			border-radius: 30px;
+}
+.main-menu {
+	padding: 0;
+	margin: 0;
+	border: none;
+	background-color: transparent;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+}
+
+
+/*CSS code header-downline*/
+
+.header-downline{background-color: #2ecc71;}
+.header-downline img:first-child {
+	margin-top: 205px;
+	margin-bottom: 20px;
+}
+.header-downline h1 {
+	font: 64px "Roboto-Light", sans-serif;
+	color: #f4f4f4;
+}
+.header-downline h1 span {
+	font: 64px "Roboto-Bold", sans-serif;
+	font-weight: bold;
+	color: #f4f4f4;
+}
+.header-downline p {
+	font: 18px "Roboto-Light", sans-serif;
+	line-height: 32px;
+	color: #f4f4f4;
+}
+.header-downline img:last-child,
+.header-downline img:nth-last-child(2)
+{
+	margin-top: 45px;
+	margin-bottom: 180px;
+}
+.header-downline img:last-child {margin-left: 30px;}
+.header-downline {
+	background: url(../img/bgc-top-3.png) no-repeat 45% 4%,
+				url(../img/bgc-top-2.png) no-repeat 100% 33%,
+				url(../img/bgc-top-4.png) no-repeat 81% 82%,
+				url(../img/bcg-top-1.png) no-repeat 48% 107%,
+				url(../img/bgc-top-5.png) no-repeat 0% 20% #2ecc71;
+}
+
+/*CSS Code app-info*/
+
+.app-info {
+	background: url(../img/bcg-top-1.png) no-repeat 48.1% -17.1% #fafbfb;
+}
+.description {
+	display: inline-block;
+	float: right;
+	margin-top: 348px;
+	margin-bottom: 365px;
+}
+.app-info h2,
+.plan-diet h2,
+.meal-time h2,
+.down-footer h2 {
+	font: 48px "Roboto-Light", sans-serif;
+	color: #5a5a5a;
+	margin-bottom: 20px;
+}
+.app-info h2 span,
+.plan-diet h2 span,
+.meal-time h2 span {color: #2ecc71;}
+.app-info p,
+.plan-diet p,
+.meal-time p,
+.down-footer p {
+	font: 18px "Roboto-Light", sans-serif;
+	line-height: 32px;
+	color: #5a5a5a;
+}
+/*CSS Code Icons of App*/
+
+.bgc-icon-1 {
+	background: url(../img/sound.png) no-repeat 50% 49% #e7e7e7;
+	width: 60px;
+	height: 60px;
+
+	-webkit-border-radius: 30px;
+	   -moz-border-radius: 30px;
+		-ms-border-radius: 30px;
+		 -o-border-radius: 30px;
+			border-radius: 30px;
+}
+.bgc-icon-2 {
+	background: url(../img/days.png) no-repeat 50% 50% #e7e7e7;
+	width: 60px;
+	height: 60px;
+
+	-webkit-border-radius: 30px;
+	   -moz-border-radius: 30px;
+		-ms-border-radius: 30px;
+		 -o-border-radius: 30px;
+			border-radius: 30px;
+}
+.bgc-icon-3 {
+	background: url(../img/growth.png) no-repeat 50% 50% #2ecc71;
+	width: 90px;
+	height: 90px;
+	border: 3px solid #fff;
+	cursor: pointer;
+
+	-webkit-border-radius: 45px;
+	   -moz-border-radius: 45px;
+		-ms-border-radius: 45px;
+	  	 -o-border-radius: 45px;
+			border-radius: 45px;
+}
+.bgc-icon-4 {
+	background: url(../img/favorite.png) no-repeat 50% 58% #e7e7e7;
+	width: 60px;
+	height: 60px;
+
+	-webkit-border-radius: 30px;
+	   -moz-border-radius: 30px;
+		-ms-border-radius: 30px;
+	  	 -o-border-radius: 30px;
+			border-radius: 30px;
+}
+.bgc-icon-5 {
+	background: url(../img/interface.png) no-repeat 50% 50% #e7e7e7;
+	width: 60px;
+	height: 60px;
+
+	-webkit-border-radius: 30px;
+	   -moz-border-radius: 30px;
+		-ms-border-radius: 30px;
+		 -o-border-radius: 30px;
+			border-radius: 30px;
+}
+.bgc-icon-1:hover,
+.bgc-icon-2:hover,
+.bgc-icon-3:hover,
+.bgc-icon-4:hover,
+.bgc-icon-5:hover {
+	background-color: #26ab5f;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+/*CSS code app-opportunities*/
+.app-opportunities {
+	background: url(../img/bgc-down-1.png) no-repeat 5% 47%,
+				url(../img/bgc-down-2.png) no-repeat 95% 48%,
+				url(../img/bgc-down-3.png) no-repeat 76.3% 94%,
+				url(../img/bgc-down-4.png) no-repeat 24% 91.6%, #f9f9f9;
+}
+.plan-diet {
+	text-align: center;
+	margin-bottom: 650px;
+}
+.plan-diet h2 {margin-top: 100px}
+
+/*Css code time-eat*/
+.meal-time {
+	float: left;
+	width: 100%;
+}
+.meal-time h2 {margin-top: 270px;}
+.meal-time p {margin-bottom: 270px;}
+
+/*Css code footer*/
+
+.down-footer {
+	background: url(../img/bgc-footer-1.png) no-repeat -6% 33%,
+				url(../img/bgc-footer-2.png) no-repeat 11% 9%,
+				url(../img/bgc-footer-3.png) no-repeat 21% 186%,
+				url(../img/bgc-footer-4.png) no-repeat 86% -26%,
+				url(../img/bgc-footer-5.png) no-repeat 107% 138% #2ecc71;
+	text-align: center;
+}
+.down-footer h2 {margin-top: 100px;}
+.down-footer h2,
+.down-footer p {color: #fff;}
+.down-footer h2 span {
+	font: 48px "Roboto-Bold", sans-serif;
+	font-weight: bold;
+	color: #fff;
+}
+.down-footer button {
+	padding: 10px 85px;
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+.down-footer p {
+	font: 12px "Roboto-Thin", sans-serif;
+	color: #fff;
+}

@@ -1,0 +1,78 @@
+mixin header()
+	+b.header&attributes(attributes)
+		.container
+			.row
+				.col-lg-2.col-md-6.col-sm-6.col-xs-6
+					+e.logo
+						img(src="assets/images/logo.png")
+				.col-lg-7.hidden-md.hidden-sm.hidden-xs
+					+e.info
+						h3 <span>Комплексные поставки и обслуживание </span><br>асфальтобетонных заводов и дорожно строительной техники по России
+				.col-lg-3.col-md-6.col-sm-6.col-xs-6
+					+e.contacts
+						.marker
+							img(src="assets/images/location-icon.png")
+							p Самара
+						p +7 <span>(846)</span> 373-30-70
+						a(href="#").hidden-sm.hidden-xs Написать директору
+		+e.menu
+			nav.main-menu.clearfix
+				a(href="#").message.hidden-lg.hidden-md Написать директору
+				button.hamburger.hamburger--squeeze.hidden-lg.hidden-md(type="button")
+					span.hamburger-box
+						span.hamburger-inner
+				ul.mob-menu.hidden-lg.hidden-md
+					li 
+						a(href="#") О компании
+					li 
+						a(href="#") Каталог
+						ul.dropdown__menu
+							li
+								a(href="item.html") Асфальтосмесительные установки
+							li
+								a(href="#") Бетоные грудосмесительные установки
+							li
+								a(href="#") Система управления
+							li
+								a(href="#") Продажа Б/У техники
+					li
+						a(href="#") Запасные части
+					li
+						a(href="#") Сервис
+					li
+						a(href="#") Гарантия
+					li
+						a(href="#") Выполненные работы
+					li
+						a(href="#") Контакты
+					li
+						a(href="#").button Заказать звонок
+				ul.full-menu.hidden-sm.hidden-xs
+					.container
+						.row
+							.col-md-12
+								li 
+									a(href="#") О компании
+								li 
+									a(href="#") Каталог
+									ul.dropdown__menu
+										li 
+											a(href="item.html") Асфальтосмесительные установки
+										li 
+											a(href="#") Бетоные грудосмесительные установки
+										li
+											a(href="#") Система управления
+										li 
+											a(href="#") Продажа Б/У техники
+								li
+									a(href="#") Запасные части
+								li
+									a(href="#") Сервис
+								li
+									a(href="#") Гарантия
+								li
+									a(href="#") Выполненные работы
+								li
+									a(href="#") Контакты
+								li
+									a(href="#").button Заказать звонок
