@@ -1,0 +1,380 @@
+/* Адаптив */
+
+@media only screen and (max-width: 991px) {
+
+    .navbar-001 .carousel-caption .content {
+        margin-bottom: 90px;
+    }
+
+    .navbar-001 .carousel-inner .item h3{
+        margin: 0 0 10px 0;
+        font: 24.96px Open-Sans-Regular;
+        text-align: center;
+    }
+
+    .navbar-001 .carousel-inner .item p {
+        margin: 0 0 28px 0;
+        font: 17.97px Open-Sans-Regular;
+        text-align: center;
+    }
+
+    .navbar-001 .carousel-inner .item span {
+        margin: 0 0 60px 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-001 .carousel-inner .item span a {
+        padding: 10px 24px;
+    }
+
+    .navbar-001 .carousel-indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        z-index: 15;
+        width: 60%;
+        padding-left: 0;
+        margin-left: -30%;
+        text-align: center;
+        list-style: none;
+    }
+
+    .navbar-001 .carousel-indicators li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 1px 8px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #000 \9;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+
+    .navbar-001 .carousel-indicators .active {
+        width: 12px;
+        height: 12px;
+        margin: 0 8px;
+        background-color: #000;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-001 .img1 {
+        background-image: url(../img/slider_1min.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navbar-001 .img2 {
+        background-image: url(../img/slider_2min.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navbar-001 .img3 {
+        background-image: url(../img/slider_3min.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navbar-001 .img4 {
+        background-image: url(../img/slider_4min.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    body .navbar-001 .start {
+        margin-left: -132px;
+        margin-right: -98px;
+    }
+
+    .navbar-001 .carousel-inner .item {
+        height: 400px;
+    }
+
+    .navbar-001 .carousel-indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        z-index: 15;
+        width: 60%;
+        padding-left: 0;
+        margin-left: -30%;
+        text-align: center;
+        list-style: none;
+    }
+
+    .navbar-001 .carousel-indicators li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 1px 8px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #000 \9;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+
+    .navbar-001 .carousel-indicators .active {
+        width: 12px;
+        height: 12px;
+        margin: 0 8px;
+        background-color: #000;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-001 .img1 {
+        background-image: url(../img/slider_1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navbar-001 .img2 {
+        background-image: url(../img/slider_2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navbar-001 .img3 {
+        background-image: url(../img/slider_3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navbar-001 .img4 {
+        background-image: url(../img/slider_4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    body .navbar-001 .start {
+        margin-left: -130px;
+        margin-right: -110px;
+    }
+
+    .navbar-001 .carousel-inner .item {
+        height: 400px;
+    }
+
+    .navbar-001 .carousel-inner .item h3{
+        margin: 0 0 10px 0;
+        font: 24.96px Open-Sans-Regular;
+        text-align: center;
+    }
+
+    .navbar-001 .carousel-inner .item p {
+        margin: 0 0 28px 0;
+        font: 17.97px Open-Sans-Regular;
+        text-align: center;
+    }
+
+    .navbar-001 .carousel-inner .item span {
+        margin: 0 0 60px 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-001 .carousel-inner .item span a {
+        padding: 10px 24px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-001 .img1 {
+        background-image: url(../img/slider_1.jpg);
+        background-position: 37% 0;
+        background-size: cover;
+    }
+
+    .navbar-001 .img2 {
+        background-image: url(../img/slider_2.jpg);
+        background-position: 37% 0;
+        background-size: cover;
+    }
+
+    .navbar-001 .img3 {
+        background-image: url(../img/slider_3.jpg);
+        background-position: 37% 0;
+        background-size: cover;
+    }
+
+    .navbar-001 .img4 {
+        background-image: url(../img/slider_4.jpg);
+        background-position: 37% 0;
+        background-size: cover;
+    }
+
+    body .navbar-001 .start {
+        margin-left: -10px;
+        margin-right: -240px;
+        left: 40%;
+    }
+
+    .navbar-001 .carousel-inner .item {
+        height: 675px;
+    }
+
+    .navbar-001 .carousel-caption {
+        left: 16%;
+        right: 9%;
+    }
+
+    .navbar-001 .carousel-inner .item h3 {
+        margin: 0 0 15px 0;
+        font: 35px Open-Sans-Regular;
+        text-align: left;
+    }
+    .navbar-001 .carousel-inner .item p {
+        margin: 0 0 15px 0;
+        font: 22px Open-Sans-Regular;
+        line-height: 33.31px;
+        text-align: left;
+    }
+    
+    .navbar-001 .carousel-inner .item span {
+        margin: 0 20px 212px 0;
+        padding: 12px 0;
+        float: left;
+    }
+
+    .navbar-001 .carousel-inner .item span a {
+        font-size: 13px;
+        padding: 12px 23px;
+    }
+
+    .navbar-001 .carousel-indicators {
+        margin-left: -511px;
+        margin-right: -485px;
+        top: 597px;
+    }
+
+    .navbar-001 .carousel-indicators li {
+        height: 55px;
+        width: 224px;
+    }
+
+    .navbar-001 .carousel-indicators li img {
+        height: 45px;
+        margin: 5px 0 5px 5px;
+    }
+
+    .navbar-001 .carousel-indicators li h3 {
+        font-size: 9px;
+        margin: 10px 58px 0 0;
+    }
+
+    .navbar-001 .carousel-indicators li p {
+        font-size: 10px;
+        top: -34px;
+        width: 174px;
+        line-height: 12px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar-001 .img1 {
+        background-image: url(../img/slider_1.jpg);
+        background-size: cover;
+    }
+
+    .navbar-001 .img2 {
+        background-image: url(../img/slider_2.jpg);
+        background-size: cover;
+    }
+
+    .navbar-001 .img3 {
+        background-image: url(../img/slider_3.jpg);
+        background-size: cover;
+    }
+
+    .navbar-001 .img4 {
+        background-image: url(../img/slider_4.jpg);
+        background-size: cover;
+    }
+
+    body .navbar-001 .start {
+        margin-left: -10px;
+        margin-right: -240px;
+        left: 44%;
+    }
+
+    .navbar-001 .carousel-caption .content {
+        margin-bottom: 180px;
+    }
+
+    .navbar-001 .carousel-inner .item {
+        height: 675px;
+    }
+
+    .navbar-001 .carousel-inner .item h3 {
+        margin: 0 0 20px 0;
+        font: 42px Open-Sans-Regular;
+        text-align: left;
+    }
+    .navbar-001 .carousel-inner .item p {
+        margin: 0 0 20px 0;
+        font: 26px Open-Sans-Regular;
+        text-align: left;
+    }
+
+    .navbar-001 .carousel-inner .item span {
+        margin: 0 20px 0 0;
+        padding: 15px 0;
+        float: left;
+    }
+
+    .navbar-001 .carousel-inner .item span a {
+        padding: 15px 30px;
+    }
+
+    .navbar-001 .carousel-indicators {
+        margin-left: -609px;
+        margin-right: -583px;
+        top: 575px;
+    }
+
+    .navbar-001 .carousel-indicators li {
+        height: 67px;
+        width: 273px;
+    }
+
+    .navbar-001 .carousel-indicators li img {
+        height: 55px;
+        margin: 6px 0 6px 6px;
+    }
+
+    .navbar-001 .carousel-indicators li h3 {
+        font-size: 10px;
+        margin: 10px 80px 0 0;
+    }
+
+    .navbar-001 .carousel-indicators li p {
+        font-size: 12px;
+        top: -40px;
+        width: 210px;
+        line-height: 14px;
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+    .carousel-indicators {
+        margin-left: -605px;
+        margin-right: -587px;
+        top: 575px;
+    }
+
+    body .start {
+        margin-left: -10px;
+        margin-right: -240px;
+    }
+}
