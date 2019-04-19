@@ -1,0 +1,272 @@
+body {
+    overflow-x: hidden;
+    font-family: "HelveticaNeueCyr", Calibri, Arial;
+}
+
+header {
+    min-height: 700px;
+    position: relative;
+    background: url('../img/bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Затемнение фона */
+
+.overlay-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #061100;
+    opacity: .8;
+    z-index: 0;
+}
+
+.top-header {
+    position: relative;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.top-header__logo img {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.top-header__logo p {
+    display: inline;
+    position: absolute;
+    top: 23px;
+    left: 147px;
+    text-align: left;
+    color: #fff;
+}
+
+/* Меню при среднем и большом экране*/
+
+.top-header__menu li {
+    display: inline;
+    padding: 12px 0px 12px 0px;
+}
+
+.top-header__menu li:hover {
+    background-color: #00B74A;
+    box-shadow: 0 0 3px 3px #007730;
+    transition: all 0.4s;
+    cursor: pointer;
+
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+         -o-border-radius: 4px;
+}
+
+.top-header__menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    outline: none;
+    padding: 12px 12px 12px 12px;
+}
+
+/* Меню при маленьком экране*/
+
+.top-header__dropdown-menu {
+    cursor: pointer;
+}
+
+.top-header__dropdown-menu i {
+    color: #fff;
+    font-size: 40px;
+    margin-top: 37px;
+    margin-left: 50px;
+}
+
+.top-header__menu-xs li {
+    display: block;
+    position: relative;
+    padding: 15px 0px 15px 0px;
+    z-index: 10;
+}
+
+.top-header__menu-xs li a:hover {
+    background-color: #00B74A;
+    box-shadow: 0 0 3px 3px #007730;
+    transition: all 0.4s;
+    cursor: pointer;
+    z-index: 2;
+
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+         -o-border-radius: 4px;
+}
+
+.top-header__menu-xs li a {
+    width: 80%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font: 20px HelveticaNeueCyr-Thin;
+    outline: none;
+    padding: 15px 15px 15px 15px;
+    z-index: 2;
+}
+
+.menu-xs__number span {
+    font: 22px HelveticaNeueCyr-Thin;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu-xs__number button {
+    position: relative;
+    margin-top: 20px;
+    background-color: #00B74A;
+    padding: 17px 0px 15px 0px;
+    border: none;
+
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+         -o-border-radius: 20px;
+}
+
+.menu-xs__number button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 0 0 0 3px #00B74A inset;
+    transition: all 0.4s;
+}
+
+.menu-xs__number button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font: 22px HelveticaNeueCyr-Light;
+	padding: 17px 20px 15px 20px;
+    outline: none;
+}
+
+
+
+.top-header__phone p {
+    font: 20px HelveticaNeueCyr-Thin;
+    color: #fff;
+}
+
+.top-header__phone button {
+    background-color: #00B74A;
+    padding: 12px 0px 10px 0px;
+    border: none;
+
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+         -o-border-radius: 20px;
+}
+
+.top-header__phone button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 0 0 0 3px #00B74A inset;
+    transition: all 0.4s;
+}
+
+.top-header__phone button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    outline: none;
+}
+
+/* Сам продукт (фотография продукта) */
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.header-content h1 {
+    margin-bottom: 7px;
+    color: #fff;
+    text-align: center;
+}
+
+.header-content img {
+    display: block;
+    margin: auto;
+}
+
+/* Преимущества продукта */
+
+.header-triggers__item {
+    height: 50px;
+    margin-left: 15%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.header-triggers__item span {
+    display: inline-block;
+    width: 80%;
+    font: 18px HelveticaNeueCyr-UltraLight;
+    color: #fff;
+    margin: 0 0 0 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.header-triggers__item img {
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Получить консультацию */
+
+.header-button {
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.header-button p {
+    font: 24px HelveticaNeueCyr-Roman;
+    color: #fff;
+    text-align: center;
+}
+
+.header-button p span{
+    color: #00af46;
+    font-weight: bold;
+}
+
+.header-button button {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    background-color: #00B74A;
+    padding: 17px 0px 15px 0px;
+    border: none;
+
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+         -o-border-radius: 30px;
+}
+
+.header-button button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 0 0 0 3px #00B74A inset;
+    transition: all 0.4s;
+}
+
+.header-button button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    outline: none;
+    padding: 17px 20px 15px 20px;
+}

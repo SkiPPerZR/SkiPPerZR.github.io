@@ -1,0 +1,469 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+*/
+img,
+object,
+embed {max-width: 100%;}
+
+
+html {overflow-y: scroll;}
+
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+td, td img {vertical-align: top;}
+
+
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {cursor: pointer;}
+
+button, input, select, textarea {margin: 0;}
+
+
+button,
+input[type=button] {width: auto; overflow: visible;}
+
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+
+
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+body {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__caption {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__caption h2 {
+    margin: 0;
+    margin-top: 6px;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Rubik';
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header__caption h1 {
+    margin: 0;
+    color: #ffcb00;
+    font-family: 'Rubik';
+    text-transform: uppercase;
+}
+
+.header__hit {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+.header__hit span {
+    display: flex;
+    align-self: center;
+    color: #fff;
+    font-family: 'Rubik';
+    text-transform: uppercase;
+}
+
+.triggers__item span {
+    margin-top: 25px;
+    font-family: 'Rubik';
+    text-transform: uppercase;
+}
+
+.triggers__quality {
+    margin-top: 60px;
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    width: 48%;
+    position: relative;
+}
+
+.content__sale span {
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik';
+}
+
+.content__price {
+    display: flex;
+    align-items: center;
+}
+
+.content__price span {
+    display: flex;
+    font-family: 'Rubik';
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+
+.content__price span:first-child {
+    justify-content: flex-start;
+}
+
+.content__price span:last-child {
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.content__time {
+    display: flex;
+    align-self: center;
+    position: absolute;
+}
+
+.content__buy {
+    background-color: #ffcb00;
+    padding: 35px 0;
+    border: none;
+}
+
+.content__buy a {
+    font-family: 'Rubik';
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 35px 95px;
+}
+
+.content__buy a:hover {
+    background-color: #ffa800;
+    cursor: pointer;
+}
+
+.work-comments {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.work-comments p {
+    font-family: 'Rubik';
+}
+
+.work-comments__read {
+    margin-top: 40px;
+    background-color: transparent;
+    border: 8px solid #ffcb00;
+}
+
+.work-comments__read a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Rubik';
+    color: #fff;
+}
+
+.work-comments__read:hover {
+    background-color: #ffcb00;
+    cursor: pointer;
+}
+
+.work-delivery h3 {
+    display: flex;
+    align-self: center;
+    font-family: 'Rubik';
+}
+
+.work-delivery__item span {
+    font-family: 'Rubik';
+}
+
+/* Pop up окна */
+
+.popup {
+    position: fixed;
+    top: 5%;
+    display: none;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.popup a.close {
+    width: 16px;
+    height: 16px;
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url(../img/close.png) no-repeat;
+    z-index: 10;
+}
+
+/* Окно заказа товара */
+
+.reg_form .ordered {
+    display: flex;
+    flex-direction: column;
+    width: 690px;
+    height: 800px;
+    background: url(../img/fon_form.png);
+}
+
+.popup h4 {
+    display: flex;
+    align-self: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 490px;
+    font: 27px 'Rubik';
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 55px;
+}
+
+.popup h4 span {
+    font: 27px 'Rubik';
+    font-weight: 700;
+    color: #ffcb00;
+}
+
+.reg_form .ordered form {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: center;
+}
+
+.reg_form .ordered label {
+    font: normal 26px 'Rubik';
+    zoom: 1;
+    margin-left: 35px;
+    margin-bottom: 30px;
+}
+
+.reg_form .ordered input[type=text], .reg_form .ordered input[type=password], .reg_form .ordered input[type=placeholder]{
+    margin-bottom: 35px;
+    padding: 0 35px;
+    width: 562px;
+    height: 100px;
+    font: normal 26px 'Rubik';
+}
+
+.reg_form .ordered input[type=submit] {
+    margin-top: 45px;
+    display: flex;
+    align-self: center;
+    padding: 20px 90px;
+    height: 98px;
+    width: 418px;
+    background:#ffcb00;
+    border: 0;
+    border-radius: 3px;
+    font: bold 50px 'Rubik';
+    color: #fff;
+    behavior: url(PIE.htc);
+}
+
+.reg_form .ordered input[type=submit]:hover {
+    background-color: #ffa800;
+}
+
+/* Основные стили окна с отзывами */
+
+.photo_win {
+    width: 725px;
+    height: 605px;
+    overflow: visible;
+}
+
+.img_wrap {
+    margin-top: 10px;
+    width: 725px;
+    overflow: visible;
+}
+
+/* Стили слайдера */
+
+.sl_ctr {
+    position: relative;
+    width: 725px;
+    height: 605px;
+    overflow: hidden;
+}
+
+.sldr {
+    position: relative;
+    width: 10000px;
+    height: 605px;
+}
+
+.sldr .img_wrap-item {
+    float: left;
+    width: 725px;
+    height: 605px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sldr .img_wrap-item h4 {
+    font: 500 27px 'Rubik';
+    margin: 20px 20px;
+    color: #000;
+}
+
+.sldr .img_wrap-item p {
+    font: 400 20px 'Rubik';
+    margin-left: 20px;
+    color: #000;
+    text-transform: none;
+}
+
+.sldr .img_wrap-item .bg-color {
+    background-color: #fff;
+    height: 197px;
+    width: 724px;
+}
+
+/* Фотографии отзывов */
+
+.img1 {
+    background: url(../img/feedback_1.png) no-repeat 0% 0%;
+}
+
+.img2 {
+    background: url(../img/feedback_2.png) no-repeat 0% 0%;
+}
+
+.img3 {
+    background: url(../img/feedback_3.png) no-repeat 0% 0%;
+}
+
+/* Стрелки */
+
+.prv_b, .nxt_b {
+    position: absolute;
+    display: inline-block;
+    width: 55px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.prv_b:hover, .nxt_b:hover {
+    opacity: .6;
+}
+
+.prv_b {
+    top: 270px;
+    left: -105px;
+    background: url(../img/button_left.png) no-repeat;
+}
+
+.nxt_b {
+    top: 266px;
+    right: -105px;
+    background: url(../img/button_right.png) no-repeat;
+}
+
+
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background:#000;
+    opacity: .8;
+    z-index: 90;
+}

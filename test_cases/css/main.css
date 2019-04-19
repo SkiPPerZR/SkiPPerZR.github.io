@@ -1,0 +1,405 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+*/
+img,
+object,
+embed {max-width: 100%;}
+
+
+html {overflow-y: scroll;}
+
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+td, td img {vertical-align: top;}
+
+
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {cursor: pointer;}
+
+button, input, select, textarea {margin: 0;}
+
+
+button,
+input[type=button] {width: auto; overflow: visible;}
+
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+
+
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+body {
+    background-color: #fff;
+}
+
+.header h1 {
+    margin-top: 170px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Roboto Medium';
+    font-size: 40px;
+    line-height: 49px;
+    font-weight: 500;
+    color: #11264A;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1370px;
+    flex-direction: column;
+}
+
+.cases__bg {
+    display: inline;
+    position: absolute;
+    top: 445px;
+    left: 1380px;
+    font-family: 'Playfair Display Bold';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 200px;
+    line-height: 280px;
+    color: transparent;
+    z-index: 0;
+
+    transform: rotate(90deg);
+    text-shadow: 0px 3px 4px rgba(255,255,255,0.5);
+    background-color: #f1f1f1;
+
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
+}
+
+/* Стили слайдера */
+
+#viewport {
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 4);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+#slidewrapper div {
+    width: calc(100%/4);
+    float: left;
+}
+
+
+
+
+.slider {
+    display: flex;
+    height: 660px;
+    box-shadow: 0px 4px 20px rgba(17, 38, 74, 0.2);
+    z-index: 2;
+}
+
+.slider__bg-1 {
+    display: flex;
+    height: 660px;
+    width: 791px !important;
+    background: url(../images/building1.png) no-repeat 0% 0%;
+}
+
+.slider__bg-2{
+    display: flex;
+    height: 660px;
+    width: 791px !important;
+    background: url(../images/building2.png) no-repeat 0% 0%;
+}
+
+.slider__info {
+    padding: 40px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    width: 579px !important;
+    background-color: #fff;
+}
+
+.slider__info h3 {
+    margin-bottom: 7px;
+    margin-right: 125px;
+    font-family: 'Playfair Display Bold';
+    font-style: bold;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+    color: #C69642;
+}
+
+.slider__info h3 span {
+    font-size: 45px;
+}
+
+.slider__info h4 {
+    margin: 20px 125px 10px 0;
+    font-family: 'Roboto Medium';
+    font-style: bold;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #11264A;
+}
+
+.slider__info p span {
+    font-family: 'Roboto Medium';
+    font-style: bold;
+    font-weight: 500;
+}
+
+.slider__info p {
+    margin: 3px 125px 3px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.slider__info-navigation {
+    position: absolute;
+    top: 90%;
+    left: 1140px;
+    width: auto !important;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+}
+
+#prev-btn, #next-btn {
+    display: flex;
+    height: 25px;
+    width: 13px;
+}
+
+#prev-btn:hover, #next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    background: url(../images/left-vector.png) no-repeat 0% 0%;
+}
+
+#next-btn {
+    background: url(../images/right-vector.png) no-repeat 0% 0%;
+}
+
+
+.slider__info-navigation  .this-page {
+    display: flex;
+    margin-top: -15px;
+    margin-left: 15px;
+    font-family: 'Playfair Display Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: normal;
+    color: #E8C48A;
+    text-shadow: 0px 2px 6px rgba(251, 217, 164, 0.3);
+}
+
+.slider__info-navigation .all-pages {
+    display: flex;
+    margin-right: 15px;
+    margin-top: -10px;
+    font-family: 'Playfair Display Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: normal;
+    color: rgba(17, 38, 74, 0.5);
+}
+
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+    left: 841px;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 6px;
+    height: 6px;
+    background-color: #11264A;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+    background-color: #E8C48A;
+}
+
+.active {
+    background-color: #E8C48A;
+}
+
+
+.assets {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+.assets h2 {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    margin: 38px 0 30px 0;
+    font-family: 'Playfair Display Bold';
+    font-style: bold;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+    color: #11264A;
+}
+
+.assets__advantages {
+    display: flex;
+    flex-direction: column;
+    width: 295px;
+}
+
+.assets__advantages h3 {
+    font-family: 'Roboto Medium';
+    font-style: bold;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #C69642;
+}
+
+.assets__advantages p {
+    margin: 2px 0 0 2px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #11264A;
+}
+
+.sms {
+    position: relative;
+    height: 583px;
+    width: 100%;
+    background: url(../images/bg-sms.png) no-repeat 0% 0%;
+    background-size: cover;
+}
+
+.sms-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1148px;
+    flex-direction: column;
+}
+

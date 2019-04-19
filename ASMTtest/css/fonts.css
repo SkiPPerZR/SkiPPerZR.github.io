@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik'), local('Rubik-Regular'), url('../fonts/Rubik.woff2') format('woff2'), url('../fonts/Rubik.woff') format('woff'), url('../fonts/Rubik.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik Italic'), local('Rubik-Italic'), url('../fonts/Rubikitalic.woff2') format('woff2'), url('../fonts/Rubikitalic.woff') format('woff'), url('../fonts/Rubikitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik Medium'), local('Rubik-Medium'), url('../fonts/Rubikmedium.woff2') format('woff2'), url('../fonts/Rubikmedium.woff') format('woff'), url('../fonts/Rubikmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik Medium Italic'), local('Rubik-MediumItalic'), url('../fonts/Rubikmediumitalic.woff2') format('woff2'), url('../fonts/Rubikmediumitalic.woff') format('woff'), url('../fonts/Rubikmediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik Bold'), local('Rubik-Bold'), url('../fonts/Rubikbold.woff2') format('woff2'), url('../fonts/Rubikbold.woff') format('woff'), url('../fonts/Rubikbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik Bold Italic'), local('Rubik-BoldItalic'), url('../fonts/Rubikbolditalic.woff2') format('woff2'), url('../fonts/Rubikbolditalic.woff') format('woff'), url('../fonts/Rubikbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik Bold'), local('Rubik-Bold'), url('../fonts/Rubikbold.woff2') format('woff2'), url('../fonts/Rubikbold.woff') format('woff'), url('../fonts/Rubikbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

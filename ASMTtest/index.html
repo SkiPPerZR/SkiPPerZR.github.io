@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <title>ASMF часы</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__caption">
+            <h1>AMST</h1>
+            <h2>часы, которые выбирают сильные мужчины</h2>
+        </div>
+        <div class="header__hit">
+            <span>Хит продаж!</span>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="triggers">
+            <div class="triggers__item">
+                <img src="img/icon_1.png" alt="Прочное стекло">
+                 <span>Стекло с сапфировым покрытием</span>
+            </div>
+            <div class="triggers__item">
+                 <img src="img/icon_2.png" alt="Противоударные">
+                <span>Противоударные и надежные</span>
+            </div>
+            <div class="triggers__item">
+                <img src="img/icon_3.png" alt="Водонепроницаемые">
+                <span>Водонепроницаемый корпус</span>
+            </div>
+            <div class="triggers__quality">
+                <img src="img/30giorni.png" alt="30 giorni">
+                <img src="img/100.png" alt="100%">
+            </div>
+        </div>
+            
+        <div class="content">
+            <img class="content__watch" src="img/clock.png" alt="Часы">
+            <div class="content__sale">
+                <span>-72%</span>
+            </div>
+            <div class="content__price">
+                <span>3 535k idr</span>
+                <span>990k IDr</span>
+            </div>
+            <div class="content__time">
+                <img src="img/timer.png" alt="Таймер">
+            </div>
+            <button class="content__buy">
+                <a class="show_popup" rel="reg_form" href="#">Заказать</a>
+            </button>
+        </div>
+        
+        <div class="work">
+            <div class="work-comments">
+                <img src="img/stars.png" alt="5 звезд">
+                <p style="color: #ffcb00;">Средний рейтинг</p>
+                <p>Среди наших покупателей</p>
+                <button class="work-comments__read">
+                    <a class="show_popup" rel="photo_win" href="#">Читать отзывы</a>
+                </button>
+            </div>        
+            <div class="work-delivery">
+                <h3>Доставка</h3>
+                <h3 style="color: #ffcb00;">Оплата</h3>
+                <div class="work-delivery__item">
+                    <img src="img/icon_4.png" alt="Заявка">
+                    <span>Оставьте заявку и мы вам перезвоним.</span>
+                </div>
+                <div class="work-delivery__item">
+                    <img src="img/icon_5.png" alt="Оплата">
+                    <span>Оплата при получении.</span>
+                </div>
+                <div class="work-delivery__item">
+                    <img src="img/icon_6.png" alt="Доставка">
+                    <span>Доставка в течении 3-4 дней.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Окно заказа товара-->
+    <div class="container">
+        <div class="popup reg_form">
+            <div class="ordered">
+                <a class="close" href="#">Close</a>
+                <h4>Оставьте ваши контактные данные и наш менеджер <span>свяжется с вами!</span></h4>
+                <form method="post" action="">
+                    <label for="login">Пример: Василий Петров</label>
+                    <input type="text" name="name" placeholder="Ваше имя"/>
+                    <label for="password">Пример: +79230098456</label>
+                    <input type="text" name="number" placeholder="Ваш номер телефона"/>
+                    <input type="submit" value="Заказать" />	
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Окно с отзывами-->
+    <!--Класс slaider для выравнивания окна с отзывами -->
+    <div class="container"> 
+        <div class="popup photo_win slaider"> 
+            <a class="close" href="#">Close</a>
+            <div class="img_wrap">
+                <div class="sl_ctr">
+                    <div class="sldr">
+                        <div class="img_wrap-item img1">
+                            <div class="bg-color">
+                                <h4>Влад Киров</h4>
+                                <p>Пришли часы быстро, две недели в пути. <br> Упакованы были отлично, в воздушную подушку <br> и фирменную коробочку, бирки все присутствовали. <br> На выбор у продавца эти часики в трех оттенках: золото, серебро <br> и в черном цвете.</p>
+                            </div>
+                        </div>
+                        <div class="img_wrap-item img2">
+                            <div class="bg-color">
+                                <h4>Василий Иванов</h4>
+                                <p>Пришли часы быстро, две недели в пути. <br> Упакованы были отлично, в воздушную подушку <br> и фирменную коробочку, бирки все присутствовали. <br> На выбор у продавца эти часики в трех оттенках: золото, серебро <br> и в черном цвете.</p>
+                            </div>                        
+                        </div>
+                        <div class="img_wrap-item img3">
+                            <div class="bg-color">
+                                <h4>Артем Смирнов</h4>
+                                <p>Пришли часы быстро, две недели в пути. <br> Упакованы были отлично, в воздушную подушку <br> и фирменную коробочку, бирки все присутствовали. <br> На выбор у продавца эти часики в трех оттенках: золото, серебро <br> и в черном цвете.</p>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="prv_b"></div>
+                <div class="nxt_b"></div>
+            </div>
+        </div>
+    </div> 
+
+
+    <!-- Скрипт для слайдера -->
+    <script>
+        $(function() {
+            var sldr = $('.sldr'),
+                sldrContent = sldr.html(),
+                slideWidth = $('.sl_ctr').outerWidth(),
+                slideCount = $('.sldr .img_wrap-item').length,
+                prv_b = $('.prv_b'),
+                nxt_b = $('.nxt_b'),
+                sldrInterval = 3300,
+                animateTime = 1000,
+                course = 1,
+                margin = - slideWidth;
+        $('.sldr .img_wrap-item:last').clone().prependTo('.sldr');$('.sldr .img_wrap-item').eq(1).clone().appendTo('.sldr');$('.sldr').css('margin-left',-slideWidth);function nxt_bSlide(){interval=window.setInterval(animate,sldrInterval)}function animate(){if(margin==-slideCount*slideWidth-slideWidth){sldr.css({'marginLeft':-slideWidth});margin=-slideWidth*2}else if(margin==0&&course==-1){sldr.css({'marginLeft':-slideWidth*slideCount});margin=-slideWidth*slideCount+slideWidth}else{margin=margin-slideWidth*(course)}sldr.animate({'marginLeft':margin},animateTime)}function sldrStop(){window.clearInterval(interval)}prv_b.click(function(){if(sldr.is(':animated')){return false}var course2=course;course=-1;animate();course=course2});nxt_b.click(function(){if(sldr.is(':animated')){return false}var course2=course;course=1;animate();course=course2});sldr.add(nxt_b).add(prv_b).hover(function(){sldrStop()},nxt_bSlide);nxt_bSlide()});
+    </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.header-content img {
+		width: 80%;
+	}
+
+	/* Выравнивнивание Проф. Динамиков */
+	.ver-al {
+		vertical-align: middle !important; 
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.menu-xs__number span {
+		margin-left: 30%;
+	}
+
+	.menu-xs__number button {
+		margin-left: 23.5%;
+	}
+
+	.top-header__logo p {
+		font: 16px HelveticaNeueCyr-Thin;
+		width: 150px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.menu-xs__number span {
+		margin-left: 20%;
+	}
+
+	.menu-xs__number button {
+		margin-left: 10%;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.top-header__logo p {
+		font: 14px HelveticaNeueCyr-Thin;
+		width: 120px;
+	}
+
+	.top-header__menu ul {
+		padding-left: 11%;
+		display: block;
+		position: relative;
+		margin: 25px auto;
+	}
+
+	.top-header__menu li a {
+		font: 16px HelveticaNeueCyr-Thin;
+	}
+
+	.top-header__phone p {
+		margin: 15px 0 15px 189px;
+	}
+
+	.top-header__phone button {
+		margin-left: 184px;
+	}
+
+	.top-header__phone button a {
+		font: 14px HelveticaNeueCyr-Light;
+		padding: 12px 15px 10px 15px;
+	}
+
+	.header-triggers__item:last-child {
+		margin-bottom: 7.5px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+	.menu-xs__number span {
+		margin-left: 30%;
+	}
+
+	.menu-xs__number button {
+		margin-left: 23.5%;
+	}
+
+	.top-header__menu ul {
+		padding-left: 19%;
+		display: block;
+		position: relative;
+		margin: 30px 0;
+	}
+
+	.top-header__menu li a {
+		font: 16px HelveticaNeueCyr-Thin;
+	}
+
+	.top-header__phone p {
+		margin: 15px 0 15px 290px;
+	}
+
+	.top-header__phone button {
+		margin-left: 285px;
+	}
+
+	.top-header__phone button a {
+		font: 14px HelveticaNeueCyr-Light;
+		padding: 12px 15px 10px 15px;
+	}
+
+	.header-content h1 {
+		font: 40px HelveticaNeueCyr-Bold;
+    	line-height: 1.5;
+	}
+
+	.header-content img {
+		width: 60%;
+	}
+
+	.header-button button a {
+		font: 18px HelveticaNeueCyr-Light;
+	}
+
+	/* Выравнивнивание Проф. Динамиков */
+	.ver-al {
+		vertical-align: 0px !important;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.top-header__menu ul {
+		padding-left: 0;
+		margin: 40px 0;
+	}
+
+	.top-header__menu li a {
+		font: 14px HelveticaNeueCyr-Thin;
+	}
+
+	.top-header__phone p {
+		margin: 15px 0 15px 24px;
+	}
+
+	.top-header__phone button {
+		margin-left: 20px;
+	}
+	
+}
