@@ -119,19 +119,117 @@
 
     <section class="sms">
         <div class="sms-container">
-            <div class="sms__alert">
-                <div class="sms__info">
-                    <h3>1 из 4</h3>
-
-                    <div class="sms__info__indicators"></div>
-
-                    <h3>1. Какую сумму вы хотите инвестировать?</h3>
-
-                    <form>
-                        <input type="text" placeholder="Ввeдите сумму в рублях">
-                        <label>Заполните форму слева</label>
-                        <button type="submit">Далее</button>
-                    </form>
+            <div id="sms-viewport">
+                <div id="sms-slidewrapper">
+                    <div class="sms-form slide">
+                        <div class="sms__info">
+                            <h3>1 из 4</h3>
+                            <div class="sms__info__indicators">
+                                <div class="sms__info__fill-1"></div>
+                            </div>
+                            <h4>1. Какую сумму вы хотите инвестировать?</h4>
+                            <form name="contact">
+                                <input type="text" placeholder="Ввeдите сумму в рублях">
+                                <label>Заполните форму слева</label>
+                                <div id="btn-form-slide-1" class="next">Далее</div>
+                                <div class="vector1"></div>
+                            </form>
+                        </div>
+                        <div class="sms__description">
+                            <h3>Подбор лучших вариантов</h3>
+                            <p>Заполните форму из 4 вопроссов, и мы подберем 3 самых перспективных  варианта под ваши требования в течение 15 минут.</p>
+                        </div>
+                    </div>
+                    <div class="sms-form slide">
+                        <div class="sms__info">
+                            <h3>2 из 4</h3>
+                            <div class="sms__info__indicators">
+                                <div class="sms__info__fill-2"></div>
+                            </div>
+                            <h4>2. В каком году недвижимость должна начать приносить доход?</h4>
+                            <form name="contact">
+                                <div class="select">
+                                    <a href="javascript:void(0);" class="slct">Выберите год</a>
+                                    <ul class="drop">
+                                        <li><a href="">2019</a></li>
+                                        <li><a href="">2020</a></li>
+                                        <li><a href="">2021</a></li>
+                                    </ul>
+                                    <input type="hidden" id="select" />
+                                </div>
+                                <label class="label-slc-1">Выберите в поле слева</label>
+                                <div class="vector2"></div>
+                                <div id="btn-form-slide-2" class="next">Далее</div>
+                            </form>
+                        </div>
+                        <div class="sms__description">
+                            <h3>Подбор лучших вариантов</h3>
+                            <p>Заполните форму из 4 вопроссов, и мы подберем 3 самых перспективных  варианта под ваши требования в течение 15 минут.</p>
+                        </div>
+                    </div>
+                    <div class="sms-form slide">
+                        <div class="sms__info">
+                            <h3>3 из 4</h3>
+                            <div class="sms__info__indicators">
+                                <div class="sms__info__fill-3"></div>
+                            </div>
+                            <h4>3. В каком районе вы хотели бы помещение?</h4>
+                            <form name="contact">
+                                <div class="select">
+                                    <a href="javascript:void(0);" class="slct">Выберите район</a>
+                                    <ul class="drop">
+                                        <li><a href="">Адмиралтейский</a></li>
+                                        <li><a href="">Василеостровский</a></li>
+                                        <li><a href="">Выборский</a></li>
+                                    </ul>
+                                    <input type="hidden" id="select" />
+                                </div>
+                                <label class="label-slc-1">Выберите в поле слева</label>
+                                <div class="vector2"></div>
+                                <div id="btn-form-slide-3" class="next">Далее</div>
+                            </form>
+                        </div>
+                        <div class="sms__description">
+                            <h3>Подбор лучших вариантов</h3>
+                            <p>Заполните форму из 4 вопроссов, и мы подберем 3 самых перспективных  варианта под ваши требования в течение 15 минут.</p>
+                        </div>
+                    </div>
+                    <div class="sms-form slide">
+                        <div class="sms__info">
+                            <h3>4 из 4</h3>
+                            <div class="sms__info__indicators">
+                                <div class="sms__info__fill-4"></div>
+                            </div>
+                            <h4>4. Укажите прочие требования и пожелания:</h4>
+                            <form name="contact">
+                                <textarea placeholder="Опишите здесь"></textarea>
+                                <label class="label-slc-2">Заполните поле</label>
+                                <label class="label-num">Ваш номер телефона</label>
+                                <input class="number" type="number" placeholder="Введите номер телефона">
+                                <div class="checkboxes">
+                                    <div class="check">
+                                        я принимаю условия передачи информации
+                                        <input type="checkbox" value="privacy">
+                                    </div>
+                                </div>
+                                <div id="btn-form-slide-4" class="next-4">Далee</div>
+                                <div class="vector3"></div>
+                            </form>
+                        </div>
+                        <div class="sms__description">
+                            <h3>Подбор лучших вариантов</h3>
+                            <p>Заполните форму из 4 вопроссов, и мы подберем 3 самых перспективных  варианта под ваши требования в течение 15 минут.</p>
+                        </div>
+                    </div>
+                    <div class="sms-form slide">
+                        <div class="sms__info-end">
+                            <div class="close"></div>
+                            <h3>Приступаем к работе</h3>
+                            <h4>Предоставим <span>3 отличных варианта</span> уже через <span>15 минут</span>.</h4>
+                            <h5>Ожидайте нашего звонка!</h4>
+                            <span class="thanks">Спасибо</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

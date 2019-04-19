@@ -104,7 +104,9 @@ input[type=button] {width: auto; overflow: visible;}
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
-
+html {
+    overflow-x: hidden;
+}
 
 body {
     background-color: #fff;
@@ -133,7 +135,7 @@ body {
     display: inline;
     position: absolute;
     top: 445px;
-    left: 1380px;
+    left: 72%;
     font-family: 'Playfair Display Bold';
     font-style: normal;
     font-weight: 500;
@@ -153,7 +155,8 @@ body {
 
 /* Стили слайдера */
 
-#viewport {
+#viewport, #sms-viewport {
+    box-shadow: 0px 4px 20px rgba(17, 38, 74, 0.2);
     width: 100%;
     display: table;
     position: relative;
@@ -165,7 +168,7 @@ body {
     user-select: none;
 }
 
-#slidewrapper {
+#slidewrapper, #sms-slidewrapper {
     position: relative;
     width: calc(100% * 4);
     top: 0;
@@ -180,18 +183,24 @@ body {
     transition-timing-function: ease-in-out;
 }
 
-#slidewrapper div {
+#sms-slidewrapper {
+    width: calc(100% * 5);
+}
+
+#slidewrapper div,
+#sms-slidewrapper div {
     width: calc(100%/4);
     float: left;
 }
 
-
+#sms-slidewrapper div {
+    width: calc(100%/5);
+}
 
 
 .slider {
     display: flex;
     height: 660px;
-    box-shadow: 0px 4px 20px rgba(17, 38, 74, 0.2);
     z-index: 2;
 }
 
@@ -267,6 +276,8 @@ body {
     align-items: center;
 }
 
+/* Стрелки навигации */
+
 #prev-btn, #next-btn {
     display: flex;
     height: 25px;
@@ -284,6 +295,7 @@ body {
 #next-btn {
     background: url(../images/right-vector.png) no-repeat 0% 0%;
 }
+
 
 
 .slider__info-navigation  .this-page {
@@ -310,6 +322,8 @@ body {
     line-height: normal;
     color: rgba(17, 38, 74, 0.5);
 }
+
+/* Стили навигации */
 
 #nav-btns {
     position: absolute;
@@ -340,6 +354,7 @@ body {
     background-color: #E8C48A;
 }
 
+/* Стили доп информации */
 
 .assets {
     display: flex;
@@ -386,6 +401,8 @@ body {
     color: #11264A;
 }
 
+/* Стили обратной связи */
+
 .sms {
     position: relative;
     height: 583px;
@@ -396,10 +413,514 @@ body {
 
 .sms-container {
     position: relative;
+    top: 80px;
     z-index: 2;
-    display: flex;
     margin: 0 auto;
     max-width: 1148px;
-    flex-direction: column;
 }
 
+.sms__description {
+    display: flex;
+    flex-direction: column;
+    width: 407px !important;
+    padding: 59px 49px 0 49px;
+    background: linear-gradient(180deg, #173363 0%, #11264A 100%), #11264A;
+}
+
+.sms__description h3 {
+    margin-bottom: 20px;
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+
+    color: #FFFFFF;
+}
+
+.sms__description p {
+    font-family: 'Roboto Thin';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+}
+
+/* Стили формы */
+
+.sms-form {
+    display: flex;
+    height: 400px;
+}
+
+.sms__info {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 0 0 70px;
+    width: 741px !important;
+    background-color: #fff;
+}
+
+.sms__info h3 {
+    margin-bottom: 5px;
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #11264A;
+}
+
+.sms__info h4 {
+    margin-bottom: 20px;
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #11264A;
+}
+
+.sms__info__indicators {
+    margin-bottom: 65px;
+    height: 7px;
+    width: 383px !important;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+}
+
+.sms__info__fill-1 {
+    height: 7px;
+    width: 96px !important;
+    background-color: #E8C48A;
+    border-radius: 5px;
+}
+
+.sms__info__fill-2 {
+    height: 7px;
+    width: 191px !important;
+    background-color: #E8C48A;
+    border-radius: 5px;
+}
+
+.sms__info__fill-3 {
+    height: 7px;
+    width: 284px !important;
+    background-color: #E8C48A;
+    border-radius: 5px;
+}
+
+.sms__info__fill-4 {
+    height: 7px;
+    width: 383px !important;
+    background-color: #E8C48A;
+    border-radius: 5px;
+}
+
+.sms__info form input {
+    height: 50px;
+    width: 344px;
+    padding-left: 16px;
+	border-radius: 4px;
+	position: relative;
+	border: 5px solid transparent;
+	background: #fff;
+	background-clip: padding-box;
+    box-shadow: 0 0 5px 0 #D4AC6B,
+                0 0 5px 0 #FFDCA3;
+    outline: none;
+}
+
+.sms__info form input::placeholder {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: rgba(17, 38, 74, 0.6);
+}
+
+.sms__info form label {
+    margin-left: 35px;
+    padding: 16px 46px 17px 41px;
+    background-color: #11264A;
+    font-family: 'Roboto Thin';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: normal;
+    color: #FFFFFF;
+    border-radius: 4px;
+    cursor: default;
+}
+
+.sms__info form .vector1 {
+    display: inline;
+    width: 50px;
+    height: 50px;
+    background: url(../images/vector-up.png) no-repeat 0% 0%;
+    position: relative;
+    top: -102px;
+    left: 412px;
+}
+
+.sms__info form .vector2 {
+    display: inline;
+    width: 50px;
+    height: 50px;
+    background: url(../images/vector-up.png) no-repeat 0% 0%;
+    position: relative;
+    top: 92px;
+    left: 277px;
+}
+
+.sms__info form .vector3 {
+    display: inline;
+    width: 55px !important;
+    height: 50px !important;
+    background: url(../images/vector-up.png) no-repeat 0% 0%;
+    position: relative;
+    top: -85px;
+    left: 215px;
+}
+
+.sms__info form .next {
+    width: auto !important;
+    display: inline;
+    position: relative;
+    margin: 56px 35px 49px 470px;
+    padding: 14px 70px 11px 67px;
+    
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: normal;
+    text-transform: uppercase;
+
+    color: #11264A;
+
+    background: linear-gradient(90deg, #D7B57E 0%, #FAD08C 100%);
+    background-clip: padding-box;
+
+    border: 0 solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 #D4AC6B,
+                0 0 4px 0 #FFDCA3;
+    outline: none;
+    cursor: pointer;
+}
+
+.sms__info-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1148px !important;
+    background-color: #fff;
+}
+
+.sms__info-end h3 {
+    margin: 108px 0 20px 0;
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    color: #11264A;
+}
+
+.sms__info-end h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 306px;
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #11264A;
+}
+
+.sms__info-end h4 span {
+    font-family: 'Roboto Medium';
+    font-weight: 500;
+}
+
+.sms__info-end h5 {
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #11264A;
+}
+
+.sms__info-end .thanks {
+    display: inline;
+    position: absolute;
+    top: 210px;
+    left: 4750px;
+    font-family: 'Playfair Display Bold';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 200px;
+    line-height: 280px;
+    color: transparent;
+
+    text-shadow: 0px 3px 4px rgba(255,255,255,0.5);
+    background-color: #f1f1f1;
+
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
+}
+
+/*	=	Select */
+
+.slct {
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 344px;
+    padding-left: 16px;
+    padding-top: 16px;
+	border-radius: 4px;
+	background: #fff;
+	background-clip: padding-box;
+    box-shadow: 0 0 5px 0 #D4AC6B,
+                0 0 5px 0 #FFDCA3;
+    background-position: 290px -145px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;	
+    outline: none;
+}
+
+.slct, .slct a {
+    text-decoration: none;
+
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+
+    color: rgba(17, 38, 74, 0.6);;
+}
+
+.slct.active {
+	border-radius: 5px 5px 0 0;
+	border-bottom: none;
+}
+
+.drop {
+    margin: 0;
+    margin-top: 3px;
+	padding: 0;
+	width: 344px;
+	border-top: none;
+	display: none;
+	position: absolute;
+    background: #fff;
+    box-shadow: 0px 8px 5px rgba(17, 38, 74, 0.2);
+}
+
+.drop li {
+    height: 50px;
+    padding: 16px 0 0 16px;
+	list-style: none;
+	border-top: 1px dotted #e8e8e8;
+	cursor: pointer;
+	display: block;
+    background-position: 10px -119px;
+	background: #fff;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;	
+    outline: none;
+    text-decoration: none;
+    color: #11264A;
+    z-index: 10;
+}
+
+.drop li a {
+    text-decoration: none;
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #11264A;
+}
+
+.drop li:hover, .drop li:active {
+    color: #222;
+    background-color: #FBD9A4;
+    border: 2px solid rgba(17, 38, 74, 0.1);
+    box-sizing: border-box;
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    color: #11264A;
+}
+
+.label-slc-1 {
+    position: relative;
+    top: 15px;
+    left: 85px;
+}
+
+.label-slc-2 {
+    width: 243px;
+    padding: 16px 70px 17px 70px !important;
+    position: relative;
+    top: -190px;
+    left: -10px;
+}
+
+.sms__info form textarea {
+    height: 132px;
+    width: 344px;
+    padding-left: 16px;
+    padding-top: 16px;
+	border-radius: 4px;
+	position: relative;
+	border: 5px solid transparent;
+	background: #fff;
+	background-clip: padding-box;
+    box-shadow: 0 0 5px 0 #D4AC6B,
+                0 0 5px 0 #FFDCA3;
+    outline: none;
+    overflow: auto;
+    resize: none;
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #11264A;
+}
+
+.sms__info form textarea::placeholder {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: rgba(17, 38, 74, 0.6);
+}
+
+.number {
+    width: 238px !important;
+    border: none !important;
+    padding-left: 36px !important;
+    top: -135px;
+    left: 374px;
+    background: url(../images/phone.png) no-repeat 12px 18px !important;
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #11264A;
+}
+
+.label-num {
+    position: absolute;
+    top: 177px;
+    left: 3890px;
+    font-family: 'Roboto Regular' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 10px !important;
+    line-height: 14px !important;
+    color: #11264A !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    cursor: default;
+}
+
+/*	=	CheckBox */
+.checkboxes {
+    position: relative;
+    top: -120px;
+    left: 377px;
+    height: 12px;
+    width: 245px !important;
+    float: none !important;
+}
+
+.check input[type=checkbox] {
+	position: absolute;
+	left: -10000px;
+}
+.check {
+    width: 245px !important;
+    height: 12px;
+	padding-left: 20px;
+	cursor: pointer;
+    background: url(../images/no-check.png) no-repeat 0 0;
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: normal;
+
+    color: rgba(17, 38, 74, 0.8);
+}
+.check.active-ch {
+    background: url(../images/check.png) no-repeat 1.5px 2.5px,
+                url(../images/no-check.png) no-repeat 0 0;
+}
+
+.next-4 {
+    margin: 0;
+    padding: 14px 70px 11px 67px !important;
+    height: 40px !important;
+    width: 180px !important;
+    top: -70px;
+    left: 450px;
+    display: inline;
+    position: relative;
+    padding: 14px 70px 11px 67px;
+
+    background: linear-gradient(90deg, #D7B57E 0%, #FAD08C 100%) !important;
+    background-clip: padding-box !important;
+
+    border: 0 solid transparent !important;
+    border-radius: 4px !important;
+    box-shadow: 0 0 4px 0 #D4AC6B,
+                0 0 4px 0 #FFDCA3 !important;
+    outline: none !important;
+    cursor: pointer !important;
+
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #11264A;
+}
+
+.sms__info-end .close {
+    display: inline;
+    position: absolute;
+    top: 30px;
+    right: -1097px;
+    height: 21px;
+    width: 21px;
+    background: url(../images/x.png) no-repeat 0 0;
+}
+
+.hidden {
+    display: none;
+}
