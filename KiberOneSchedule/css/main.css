@@ -6,7 +6,11 @@ body {
 
 body::after {
     content: "";
-    background: url(../img/bg.png) repeat;
+    background: url(../img/bg.png) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
     opacity: 0.5;
     top: 0;
     left: 0;
@@ -232,3 +236,10 @@ footer .container{
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
+
+
+@media screen and (max-device-width: 576px) {
+    .group {
+        left: 3%;
+    }
+   }
